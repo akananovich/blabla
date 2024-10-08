@@ -1,20 +1,20 @@
 Pod::Spec.new do |spec|
-    spec.name                     = 'UAnalytics'
-    spec.version                  = '0.0.65'
-    spec.homepage                 = 'https://www.intermedia.com'
-    spec.source                   = { :http=> 'https://github.com/akananovich/blabla/releases/download/0.0.65/uanalytics-0.0.65.zip'}
-    spec.authors                  = 'Intermedia'
-    spec.license                  = 'Copyright © 2024 Intermedia LLC. All rights reserved.'
-    spec.summary                  = 'UAnalytics library'
-    spec.vendored_frameworks      = 'UAnalytics.xcframework'
-    spec.libraries                = 'c++'
-    spec.ios.deployment_target    = '15.0'
-    spec.dependency 'FirebaseAnalytics', '10.27.0'
-    spec.dependency 'FirebasePerformance', '10.27.0'
-    spec.dependency 'Pendo', '3.2.1.8473'
-                
-                
-                
-                
-                
+
+  spec.name         = "WebRTC-lib"
+  spec.version      = "129.0.0"
+  spec.summary      = "Unofficial distribution of WebRTC framework binaries for iOS. "
+  spec.description  = <<-DESC
+  This pod contains unofficial distribution of WebRTC framework binaries for iOS.
+  All binaries in this repository are compiled from the official WebRTC source code without any modifications to the sources code or to the output binaries.
+  DESC
+
+  spec.homepage     = "https://github.com/stasel/WebRTC"
+  spec.license      = { :type => 'BSD', :file => 'WebRTC.xcframework/LICENSE' }
+  spec.author       = "Stasel"
+  spec.ios.deployment_target = '12.0'
+  spec.osx.deployment_target = '10.11'
+
+  spec.source       = { :http => "https://github.com/akananovich/blabla/releases/download/129.0.0/WebRTC-M129.xcframework.zip" }
+  spec.vendored_frameworks = "WebRTC.xcframework"
+  
 end
